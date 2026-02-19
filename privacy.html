@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Stampr</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav><div class="nav-inner"><a href="index.html" class="brand">Stampr</a><div class="links"><a href="privacy.html" class="active">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="deletion.html">Data Deletion</a></div></div></nav>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective Date: February 18, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>Stampr ("we", "us") operates a web application for designing, ordering, and managing custom sticker sheets. This policy describes how we collect, use, and protect your information.</p>
+
+    <h2>2. Information We Collect</h2>
+    <p>We collect the following categories of information:</p>
+    <ul>
+      <li><strong>Account information:</strong> Email address (required for members), phone number (optional)</li>
+      <li><strong>Authentication data:</strong> Magic link tokens (temporary, 15-minute expiry), JWT session tokens</li>
+      <li><strong>User-generated content:</strong> Sticker images, canvas/design layouts, collections, orders</li>
+      <li><strong>WhatsApp integration data:</strong> Phone number (E.164 format), messages (text content), images sent via WhatsApp</li>
+      <li><strong>Device information:</strong> Browser language preference</li>
+    </ul>
+    <p>We do not use cookies for tracking. We use localStorage for: session token, user ID, and language preference.</p>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>Provide and operate the service</li>
+      <li>Send authentication emails (magic links)</li>
+      <li>Send order confirmation emails</li>
+      <li>Process WhatsApp messages and convert images to stickers</li>
+      <li>Use phone number for optional contact about orders</li>
+    </ul>
+
+    <h2>4. Data Storage</h2>
+    <p>Your data is stored as follows:</p>
+    <table>
+      <thead>
+        <tr><th>Data Type</th><th>Storage</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Structured data (accounts, orders, metadata)</td><td>PostgreSQL database</td></tr>
+        <tr><td>Images and files</td><td>S3-compatible object storage</td></tr>
+      </tbody>
+    </table>
+    <p>All data is stored on infrastructure we control. We do not sell your data to third parties.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>We use the following third-party services:</p>
+    <ul>
+      <li><strong>Meta WhatsApp Business API:</strong> For WhatsApp messaging features. Subject to Meta's privacy policy.</li>
+      <li><strong>SMTP email provider:</strong> For sending authentication and order emails</li>
+    </ul>
+    <p>We do not use analytics services, advertising networks, or tracking pixels.</p>
+
+    <h2>6. WhatsApp Data</h2>
+    <p>When you use our WhatsApp integration:</p>
+    <ul>
+      <li>We store your WhatsApp phone number, message content (text), and images</li>
+      <li>Images sent via WhatsApp are processed and stored as stickers in your account</li>
+      <li>WhatsApp conversations are stored for customer support purposes</li>
+      <li>Audio and video messages are not processed or stored</li>
+    </ul>
+
+    <h2>7. Data Retention</h2>
+    <ul>
+      <li>Account data is retained while your account is active</li>
+      <li>Magic link tokens expire after 15 minutes</li>
+      <li>Deleted stickers are soft-deleted (marked as deleted but retained temporarily)</li>
+      <li>WhatsApp messages are retained for conversation continuity</li>
+    </ul>
+
+    <h2>8. Your Rights</h2>
+    <ul>
+      <li>Access your data through your account</li>
+      <li>Request data deletion (see our <a href="deletion.html">Data Deletion Policy</a>)</li>
+      <li>Unlink your WhatsApp number at any time via account settings</li>
+      <li>Export is not currently available but may be added in the future</li>
+    </ul>
+
+    <h2>9. Children's Privacy</h2>
+    <p>Our service is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+
+    <h2>11. Contact</h2>
+    <p>For privacy inquiries, contact us at <a href="mailto:legal@stampr.ar">legal@stampr.ar</a>.</p>
+
+    <footer>&copy; 2026 Stampr. All rights reserved.</footer>
+  </div>
+</body>
+</html>

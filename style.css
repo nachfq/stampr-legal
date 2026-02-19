@@ -1,0 +1,36 @@
+:root {
+  --dark: #1a1a2e;
+  --slate: #4a5568;
+  --sage: #6b8f71;
+  --cream: #faf9f6;
+  --light: #f0efeb;
+  --border: #e2e8f0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--dark);
+  background: var(--cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+nav { background: var(--dark); padding: 1rem 1.5rem; position: sticky; top: 0; z-index: 10; }
+nav .nav-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
+nav .brand { color: #fff; font-size: 1.25rem; font-weight: 700; text-decoration: none; letter-spacing: -0.02em; }
+nav .links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.875rem; transition: color 0.15s; }
+nav a:hover, nav a.active { color: #fff; }
+h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
+.effective-date { color: var(--slate); font-size: 0.875rem; margin-bottom: 2.5rem; }
+h2 { font-size: 1.35rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+p, li { color: var(--slate); font-size: 1rem; margin-bottom: 0.75rem; }
+ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+li { margin-bottom: 0.35rem; }
+strong { color: var(--dark); }
+a { color: var(--sage); }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.65rem 0.85rem; border: 1px solid var(--border); color: var(--slate); }
+th { background: var(--light); color: var(--dark); font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.03em; }
+footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--slate); text-align: center; }
